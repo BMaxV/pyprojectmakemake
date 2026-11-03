@@ -1,0 +1,18 @@
+[build-system]
+requires=["setuptools"]
+build-backend="setuptools.build_meta"
+[project]
+name = "py_project_makefile"
+version = "0.1"
+authors = [{ name = "Bruno Maximilian Voß", email = "bruno.m.voss@gmail.com" }]
+description = "create a make file for this python project"
+readme = "README.md"
+license = "MIT"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+
+[project.scripts]
+pyprojectmakemake = "pyprojectmakefile.script:makemake"
+
